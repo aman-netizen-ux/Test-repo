@@ -159,8 +159,8 @@ class _LoginScreenUsingMailState extends State<LoginScreenUsingMail> {
                                   color: black),
                             ),
                           ),
-                          const SizedBox(
-                            height: 13,
+                          SizedBox(
+                            height: MediaQuery.of(context).size.height * 0.002,
                           ),
                           TextFormField(
                             controller: emailController,
@@ -204,10 +204,10 @@ class _LoginScreenUsingMailState extends State<LoginScreenUsingMail> {
                       padding: EdgeInsets.only(
                         left: space_7,
                         right: space_7,
-                        top: MediaQuery.of(context).size.height * 0.046,
+                        top: MediaQuery.of(context).size.height * 0.016,
                       ),
                       child: Container(
-                        height: space_11,
+                        height: MediaQuery.of(context).size.height * 0.070,
                         width: MediaQuery.of(context).size.width,
                         decoration: BoxDecoration(
                           color: Color.fromARGB(255, 21, 41, 104),
@@ -251,7 +251,7 @@ class _LoginScreenUsingMailState extends State<LoginScreenUsingMail> {
                         right: space_4,
                       ),
                       width: MediaQuery.of(context).size.width,
-                      height: MediaQuery.of(context).size.height * 0.10,
+                      height: MediaQuery.of(context).size.height * 0.05,
                       child: Row(
                         children: [
                           Expanded(
@@ -318,7 +318,8 @@ class _LoginScreenUsingMailState extends State<LoginScreenUsingMail> {
                         },
                       ),
                     ),
-                    const SizedBox(height: 10),
+                    SizedBox(
+                        height: MediaQuery.of(context).size.height * 0.001),
                     const Center(
                       child: Text('create new account?',
                           style: TextStyle(

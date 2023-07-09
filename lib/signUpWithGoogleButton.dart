@@ -15,7 +15,7 @@ class SignUpWithGoogleButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        height: space_11,
+        height: MediaQuery.of(context).size.height * 0.070,
         decoration: BoxDecoration(
           color: black,
           borderRadius: BorderRadius.circular(radius_3),
